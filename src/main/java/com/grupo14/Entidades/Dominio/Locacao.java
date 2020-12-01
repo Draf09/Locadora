@@ -6,9 +6,9 @@ public class Locacao {
 
 	private Carro carro;
 	private Date inicio;
-	private int fim;
+	private Date fim;
 
-	public Locacao(Carro carro, Date inicio, int fim) {
+	public Locacao(Carro carro, Date inicio, Date fim) {
 		this.carro = carro;
 		this.inicio = inicio;
 		this.fim = fim;
@@ -19,41 +19,12 @@ public class Locacao {
 		return false;
 	}
 
-	public void dataDevolucao() {
-
+	public Date dataDevolucao() {
+		return fim;
 	}
 
-	public void diariasCobradas() {
+	 
 
-	}
-
-	public void diariasUtilizadas() {
-
-	}
-
-	public void valoCobrado() {
-
-	}
-
-	public void valorResidual() {
-
-	}
-
-	public void kmInicio() {
-
-	}
-
-	public void kmFinal() {
-
-	}
-
-	public int cliente() {
-		return 0;
-	}
-
-	public float valorPago() {
-		return 0;
-	}
 
 	public Carro getCarro() {
 		return carro;
